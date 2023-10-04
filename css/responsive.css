@@ -1,0 +1,55 @@
+@media screen and (max-width: 540px) {
+    
+    /*ELEMENTS THAT'LL DISAPPEAR*/
+    .disappear-540{
+        display: none;
+    }
+
+    .left-col .text-container{
+        display: none;
+    }
+
+    /* WRAPPER */
+    .wrapper{
+        width: 100%;
+        /*debug*/
+        height: 100vh;
+    }
+
+    /* LEFT COLUMN */
+    .left-col {
+        width: 20%;
+    }
+
+    .left.nav{
+        justify-content: center;
+    }
+
+    .contacts-list{
+        height: 100%;
+    }
+
+    /* CONTACTS */
+    .contact{
+    height: calc(100% / 8);
+    justify-content: center;
+}
+
+    /* RIGHT COLUMN */
+    .right-col {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    /*ELEMENTS THAT'LL DISAPPEAR*/
+    .disappear-320{
+        display: none;
+    }
+
+    /* RIGHT COLUMN */
+    .right-col {
+        width: 100%;
+    }
+}
