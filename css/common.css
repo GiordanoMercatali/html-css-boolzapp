@@ -1,2 +1,65 @@
 
 
+/* BOTH COLUMNS */
+/* HEADER */
+.header{
+    width: 100%;
+    /*debug*/
+    background-color: wheat;
+    height: 4rem;
+}
+
+.nav{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*debug*/
+    height: 100%;
+}
+
+/* IMAGE CONTAINER */
+.img-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    /*debug*/
+    background-color: red;
+}
+
+/* FLEX LIST */
+.flex-ul{
+   list-style-type: none;
+   display: flex;
+   gap: 0.5rem
+}
+
+/* DEBUG: ICON CONTAINER */
+.icon-container{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+    /*debug*/
+    background-color: blue;
+}
+
+/* TEXT CONTAINER */
+.text-container{
+    justify-self: flex-start;
+    border: var(--border);
+}
+
+
+/* FORM */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    /* debug */
+    height: 2rem;
+}
