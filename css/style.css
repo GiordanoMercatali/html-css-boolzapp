@@ -114,32 +114,39 @@
 
 /* CHAT */
 .chat{
-    width: 80%;
+    width: 100%;
     margin: auto;
-    padding: 0 1rem;
+    padding: 1.5rem 2rem;
     /* debug */
-    border: var(--border);
     height: 100%;
+}
+
+/* MESSAGES */
+.message-container{
+    margin-bottom: 1rem;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/* MESSAGES */
 .message{
     width: 300px;
+    border-radius: 12px;
     /* debug */
-    border: var(--border);
-    height: 200px;
+    height: 100px;
     background-color: white;
 }
 
 /* GREEN MESSAGE */
-.message.green{
-   justify-self: flex-end;
-   background-color: green;
+.message-container.green{
+   justify-content: flex-end;
 }
+
+.message-container.green .message{
+    background-color: green;
+ }
 
 /*RIGHT FOOTER*/
 .footer{
