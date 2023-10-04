@@ -1,6 +1,6 @@
 /*Custom properties*/
 :root{
-    
+    --border: 1px solid black;
 }
 
 /*Reset*/
@@ -8,4 +8,45 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*WEB APP CONTAINER*/
+.web-app{
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*WRAPPER*/
+.wrapper{
+    width: 80%;
+    margin: auto;
+    /*debug*/
+    border: var(--border);
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LEFT COLUMN */
+.left-col{
+    width: 30%;
+    /*debug*/
+    border: var(--border);
+    background-color: white;
+    height: 100%;
+}
+
+/* RIGHT COLUMN */
+.right-col{
+    width: 70%;
+    /*debug*/
+    border: var(--border);
+    background-color: black;
+    height: 100%;
 }
