@@ -88,6 +88,10 @@
     padding: 0 1rem;
 }
 
+.contact:hover{
+    background-color: lightgray;
+}
+
 .contact .text-container:not(.hour){
     width: calc(100% - 100px);
 }
@@ -146,6 +150,23 @@
 
 .message-container.green .message{
     background-color: green;
+ }
+
+ /* MESSAGE HOVER */
+ .hover-box{
+    width: 100px;
+    /* debug */
+    height: 50px;
+    background-color: white;
+    border: var(--border);
+    position: relative;
+    top: 1.5rem;
+    left: 12rem;
+    display: none;
+ }
+
+ .message-container:hover .hover-box{
+    display: inline-block;
  }
 
 /*RIGHT FOOTER*/
