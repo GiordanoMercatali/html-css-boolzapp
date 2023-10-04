@@ -49,7 +49,7 @@
 /* TEXT CONTAINER */
 .text-container{
     justify-self: flex-start;
-    border: var(--border);
+    
 }
 
 

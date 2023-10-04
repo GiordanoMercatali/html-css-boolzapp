@@ -25,7 +25,7 @@
     width: 80%;
     margin: auto;
     /*debug*/
-    border: var(--border);
+    
     height: 80vh;
     display: flex;
     flex-direction: row;
@@ -37,9 +37,14 @@
 .left-col{
     width: 35%;
     /*debug*/
-    border: var(--border);
+    
     background-color: white;
     height: 100%;
+}
+
+/* LEFT HEADER */
+.header.left{
+    border-right: 1px gray solid;
 }
 
 /* LEFT MAIN */
@@ -66,7 +71,7 @@
 .contacts-list{
     overflow-y: auto;
     /* debug */
-    border: var(--border);
+    
     border-color: red;
     height: calc(100% - 6rem);
 }
@@ -75,10 +80,11 @@
 .contact{
     width: 100%;
     /* debug */
-    border: var(--border);
+    
     height: calc(100% / 7);
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     padding: 0 1rem;
 }
 
@@ -94,7 +100,65 @@
 .right-col{
     width: 65%;
     /*debug*/
-    border: var(--border);
+    
     background-color: black;
     height: 100%;
+}
+
+/*RIGHT MAIN*/
+.main.right{
+    background-image: url(/img/mine.jpg);
+    background-size: contain;
+    height: calc(100% - 8rem);
+}
+
+/* CHAT */
+.chat{
+    width: 80%;
+    margin: auto;
+    padding: 0 1rem;
+    /* debug */
+    border: var(--border);
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* MESSAGES */
+.message{
+    width: 300px;
+    /* debug */
+    border: var(--border);
+    height: 200px;
+    background-color: white;
+}
+
+/* GREEN MESSAGE */
+.message.green{
+   justify-self: flex-end;
+   background-color: green;
+}
+
+/*RIGHT FOOTER*/
+.footer{
+    height: 4rem;
+}
+
+/*RIGHT FORM*/
+.form.right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: lightgray;
+    gap: 1rem;
+    padding: 1rem;
+    /* debug */
+    height: 4rem;
+}
+
+.form.right input{
+    flex-grow: 1;
 }
