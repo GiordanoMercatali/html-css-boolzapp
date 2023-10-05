@@ -5,7 +5,7 @@
 .header{
     width: 100%;
     /*debug*/
-    background-color: wheat;
+    background-color: var(--primary-color);
     height: 4rem;
 }
 
@@ -68,7 +68,7 @@ p{
     align-items: center;
     width: 100%;
     padding: 1rem 2rem;
-    background-color: lightgray;
+    background-color: var(--primary-color);
     /* debug */
     height: 4rem;
 }

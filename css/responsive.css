@@ -43,8 +43,6 @@
     /*MESSAGES*/
     .message{
         width: 200px;
-        /* debug */
-        height: 150px;
     }
 }
 
@@ -58,11 +56,5 @@
     /* RIGHT COLUMN */
     .right-col {
         width: 100%;
-    }
-
-    /* MESSAGES */
-    .message{
-        /* debug */
-        height: 100px;
     }
 }
