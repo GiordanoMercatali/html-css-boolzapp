@@ -69,6 +69,11 @@
         --black-color: white;
     }
 
+    .main.right{
+        
+        filter: invert();
+    }
+
     .notifications h4, .received p{
         color: black;
     }
