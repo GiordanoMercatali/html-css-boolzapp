@@ -1,11 +1,14 @@
 /*Custom properties*/
 :root{
-    --border: 1px solid black;
+    --border: 1px solid var(--black-color);
     --background-color-25: #009688;
     --background-color-75: #dbdbd2;
     --primary-color: #eaeaea;
+    --dark-color: #323232;
     --notification-color: #8edafc;
     --received-msg-color: #d5f9ba;
+    --white-color: white;
+    --black-color: black;
 }
 
 /*Reset*/
@@ -49,7 +52,7 @@
     width: 35%;
     /*debug*/
     
-    background-color: white;
+    background-color: var(--white-color);
     height: 100%;
 }
 
@@ -86,7 +89,7 @@
 .notifications .icon-container{
     width: 50px;
     height: 50px;
-    background-color: white;
+    background-color: var(--white-color);
     color: var(--notification-color);
     font-size: 24px;
 }
@@ -98,11 +101,12 @@
 
 .left.form .icon-container{
     border-radius: 0;
-    background-color: white;
+    background-color: var(--white-color);
 }
 
 /*CONTACTS LIST*/
 .contacts-list{
+    background-color: var(--white-color);
     overflow-y: auto;
     /* debug */
     height: calc(100% - 8rem);
@@ -176,7 +180,7 @@
     width: 300px;
     border-radius: 12px;
     padding: 1rem;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     gap: 1rem;
 }
@@ -199,7 +203,7 @@
 }
 
 .message p{
-    color: black;
+    color: var(--black-color);
 }
 
 /* RECEIVED MESSAGE */
@@ -214,7 +218,7 @@
  /* MESSAGE HOVER */
  .hover-box{
     width: 150px;
-    background-color: white;
+    background-color: var(--white-color);
     border: var(--border);
     display: none;
  }
@@ -252,4 +256,48 @@
 
 .form.right input{
     border-radius: 5px;
+}
+
+/*MICROPHONE ANIMATION*/
+.audio-message:active{
+    animation: recording 5s linear;
+}
+
+@keyframes recording{
+    
+    0%{
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+    
+    20%{
+        color: red;
+        border: 1px solid red;
+        border-radius: 50%;
+    }
+
+    40%{
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+    
+    60%{
+        color: red;
+        border: 1px solid red;
+        border-radius: 50%;
+    }
+
+    80%{
+        color: blue;
+        border: 1px solid blue;
+        border-radius: 50%;
+    }
+    
+    100%{
+        color: red;
+        border: 1px solid red;
+        border-radius: 50%;
+    }
 }

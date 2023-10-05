@@ -56,6 +56,13 @@
     justify-self: flex-start;
 }
 
+/* H */
+h4 {
+    color: var(--black-color);
+}
+
+
+/* P */
 p{
     color: gray;
 }

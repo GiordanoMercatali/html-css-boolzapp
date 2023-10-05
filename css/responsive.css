@@ -1,3 +1,4 @@
+/* TABLET VERSION */
 @media screen and (max-width: 540px) {
     
     /*ELEMENTS THAT'LL DISAPPEAR*/
@@ -45,7 +46,7 @@
         width: 200px;
     }
 }
-
+/* MOBILE VERSION */
 @media screen and (max-width: 320px) {
     
     /*ELEMENTS THAT'LL DISAPPEAR*/
@@ -56,5 +57,23 @@
     /* RIGHT COLUMN */
     .right-col {
         width: 100%;
+    }
+}
+
+/* COLOR SCHEME */
+@media (prefers-color-scheme: dark){
+    :root{
+        --primary-color: var(--dark-color);
+        --background-color-75: gray;
+        --white-color: black;
+        --black-color: white;
+    }
+
+    .notifications h4, .received p{
+        color: black;
+    }
+
+    .icon-container{
+        color: lightgrey;
     }
 }
