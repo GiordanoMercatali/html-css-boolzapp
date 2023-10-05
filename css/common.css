@@ -11,10 +11,11 @@
 
 .nav{
     margin: auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
     /*debug*/
     height: 100%;
 }
@@ -23,10 +24,12 @@
 .img-container{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+}
 
-    /*debug*/
-    background-color: red;
+.img-container img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
 }
 
 /* FLEX LIST */
@@ -36,20 +39,25 @@
    gap: 0.5rem
 }
 
-/* DEBUG: ICON CONTAINER */
+/* ICON CONTAINER */
 .icon-container{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-
-    /*debug*/
-    background-color: blue;
+    color: gray;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* TEXT CONTAINER */
 .text-container{
     justify-self: flex-start;
-    
+}
+
+p{
+    color: gray;
 }
 
 
@@ -59,7 +67,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 1rem 2rem;
     background-color: lightgray;
     /* debug */
-    height: 2rem;
+    height: 4rem;
+}
+
+.form input{
+    flex-grow: 1;
+    height: 100%;
+    border-color: transparent;
 }

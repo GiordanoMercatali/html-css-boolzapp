@@ -60,6 +60,7 @@
     background-color: aqua;
     display: flex;
     align-items: center;
+    gap: 1rem;
     padding: 0 1rem;
 }
 
@@ -67,13 +68,33 @@
     width: calc(100% - 50px);
 }
 
+.notifications .text-container p{
+    text-decoration: underline;
+}
+
+.notifications .icon-container{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: aqua;
+    font-size: 24px;
+}
+
+/*LEFT FORM*/
+.left.form input{
+    height: 30px;
+}
+
+.left.form .icon-container{
+    border-radius: 0;
+    background-color: white;
+}
+
 /*CONTACTS LIST*/
 .contacts-list{
     overflow-y: auto;
     /* debug */
-    
-    border-color: red;
-    height: calc(100% - 6rem);
+    height: calc(100% - 8rem);
 }
 
 /* CONTACTS */
@@ -188,8 +209,5 @@
 }
 
 .form.right input{
-    flex-grow: 1;
-
-    /* debug */
-    height: 100%;
+    border-radius: 5px;
 }
