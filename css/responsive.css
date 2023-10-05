@@ -9,8 +9,8 @@
         display: none;
     }
 
-    /* WRAPPER */
-    .wrapper{
+    /* app */
+    .app{
         width: 100%;
         /*debug*/
         height: 100vh;
