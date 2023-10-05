@@ -80,8 +80,8 @@
 .contact{
     width: 100%;
     /* debug */
-    
-    height: 80px;
+    height: calc(100% / 7);
+    min-height: 100px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
